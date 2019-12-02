@@ -1,0 +1,8 @@
+#products {
+  font-family: "Open Sans";
+  margin-bottom: 15em;
+}
+
+.product-image img {
+  border-radius: 10px;
+}

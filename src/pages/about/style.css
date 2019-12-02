@@ -1,0 +1,20 @@
+.about-section {
+  font-family: "Open Sans", sans-serif;
+  margin: 5em 0 5em 0;
+}
+
+.about-section-text {
+  padding: 3em 0 0 0;
+}
+
+.about-section-image {
+  padding: 3em 0 3em 0;
+  border: 3px dashed #bbdefb;
+  border-radius: 10px;
+}
+
+.about-section:not(:last-child) img,
+.about-section:last-child img {
+  width: 300px;
+  height: 300px;
+}

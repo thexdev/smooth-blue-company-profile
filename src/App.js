@@ -1,26 +1,33 @@
-import React from 'react';
-import logo from './logo.svg';
-import './App.css';
+import React, { memo, Fragment, Suspense, lazy } from "react";
+import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
 
-function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
-}
+const NavigationBar = lazy(() => import("components/navbar"));
+const ContactForm = lazy(() => import("components/contact-form"));
+const Footer = lazy(() => import("components/footer"));
 
-export default App;
+const Home = lazy(() => import("pages/home"));
+const About = lazy(() => import("pages/about"));
+const Team = lazy(() => import("pages/teams"));
+const Services = lazy(() => import("pages/services"));
+const Clients = lazy(() => import("pages/clients"));
+
+export default memo(() => (
+  <Fragment>
+    <Router>
+      <Suspense fallback={<div>loading. . .</div>}>
+        <NavigationBar />
+        <main>
+          <Switch>
+            <Route exact path="/" component={Home} />
+            <Route exact path="/about-us" component={About} />
+            <Route exact path="/teams" component={Team}></Route>
+            <Route exact path="/services" component={Services}></Route>
+            <Route exact path="/clients" component={Clients}></Route>
+            <Route exact path="/contact" component={ContactForm}></Route>
+          </Switch>
+        </main>
+        <Footer />
+      </Suspense>
+    </Router>
+  </Fragment>
+));

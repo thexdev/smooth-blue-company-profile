@@ -1,0 +1,25 @@
+#teams {
+  font-family: "Open Sans", sans-serif;
+  margin: 5em 0 5em 0;
+}
+
+#teams .card:hover {
+  transform: scale(1.03);
+  transition: 0.45s;
+}
+
+#teams .card:not(:hover) {
+  transform: scale(1);
+  transition: 0.45s;
+}
+
+#teams img {
+  width: 130px;
+  height: 130px;
+  border-radius: 50%;
+  object-fit: cover;
+}
+
+#teams .card-text {
+  color: #1e88e5;
+}

@@ -1,0 +1,10 @@
+#clients {
+  font-family: "Open Sans", sans-serif;
+  margin-bottom: 15em;
+}
+
+#clients .item img {
+  height: auto;
+  width: 50%;
+  object-fit: cover;
+}

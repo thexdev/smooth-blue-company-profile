@@ -1,0 +1,46 @@
+#services {
+  font-family: "Open Sans", sans-serif;
+}
+
+#services .card {
+  border-radius: 0px;
+  width: 15em;
+}
+
+#services .card-body {
+  text-align: center;
+  background-color: #1e88e5;
+}
+
+#services .card img {
+  width: auto;
+  height: 10em;
+  margin-bottom: 20px;
+}
+
+#services {
+  margin-bottom: 15em;
+}
+
+#services .card-header,
+#services .card-title {
+  text-align: center;
+  text-transform: capitalize;
+}
+
+#services .card button {
+  border: 2px solid;
+  color: #ffffff !important;
+}
+
+#services .card button:hover {
+  border-color: #ffffff;
+  color: #000000 !important;
+  transform: scale(1.1);
+  transition: 0.45s;
+}
+
+#services .card button:not(:hover) {
+  transform: scale(1);
+  transition: 0.45s;
+}

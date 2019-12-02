@@ -1,0 +1,27 @@
+#hero {
+  margin-bottom: 15em;
+}
+
+.hero-illustration img {
+  padding-top: 4em;
+  width: 100%;
+}
+
+.hero-text {
+  color: #ffffff;
+  font-family: "Open Sans", sans-serif;
+  background-color: #1e88e5;
+  padding: 8.5em 8.5em 5em 6em;
+}
+
+.hero-text h1 {
+  font-size: 45px;
+  text-align: right;
+  font-weight: 700;
+  line-height: 1.2;
+  word-break: break-word;
+}
+
+.hero-text p {
+  font-size: 20px;
+}

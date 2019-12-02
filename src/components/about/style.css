@@ -1,0 +1,33 @@
+#about-us {
+  font-family: "Open Sans", sans-serif;
+}
+
+#about-us p {
+  line-height: 1.5;
+  word-spacing: 3px;
+}
+
+#about-us {
+  margin-bottom: 15em;
+}
+
+#about-us img {
+  height: 100%;
+}
+
+#about-us .row div:nth-child(2) {
+  border-radius: 10px;
+  border: 3px dashed #bbdefb;
+  padding: 15px;
+}
+
+#about-us .row div:nth-child(2) button {
+  border: 2px solid #ffb74d;
+  color: #000000;
+}
+
+#about-us .row div:nth-child(2) button:hover {
+  border-color: #ffb74d;
+  background-color: #ffb74d;
+  color: #000000;
+}
