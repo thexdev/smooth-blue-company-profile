@@ -1,12 +1,12 @@
 import React, { memo } from "react";
 import { Container, Row, Col } from "react-bootstrap";
 
-import aeg from "assets/images/clients/aeg.png";
-import diners from "assets/images/clients/diners.png";
-import foxTactical from "assets/images/clients/fox-tactical.jpg";
-import intel from "assets/images/clients/intel.jpg";
-import microsoft from "assets/images/clients/microsoft.png";
-import semanticBits from "assets/images/clients/semantic-bits.png";
+import aeg from "assets/images/clients/aeg.webp";
+import diners from "assets/images/clients/diners.webp";
+import foxTactical from "assets/images/clients/fox-tactical.webp";
+import intel from "assets/images/clients/intel.webp";
+import microsoft from "assets/images/clients/microsoft.webp";
+import semanticBits from "assets/images/clients/semantic-bits.webp";
 
 import "./style.css";
 
